@@ -1,5 +1,28 @@
 'use strict';
 
+// Dark mode toggle
+const root = document.documentElement;
+const THEME_KEY = 'theme';
+
+function applyTheme(theme) {
+  const isDark = theme === 'dark';
+  root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+}
+
+applyTheme(sessionStorage.getItem(THEME_KEY) ?? 'light');
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    sessionStorage.setItem(THEME_KEY, next);
+    applyTheme(next);
+  });
+});
+
 // Nav: darken on scroll past hero
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
