@@ -4,6 +4,7 @@
 :root {
   --ground:      #FAFAFA;
   --surface:     #F1F5F9;
+  --card:        #ffffff;
   --text:        #0F172A;
   --text-muted:  #64748B;
   --accent:      #2563EB;
@@ -20,6 +21,18 @@
 
   --radius:    8px;
   --container: 900px;
+}
+
+[data-theme="dark"] {
+  --ground:      #0F172A;
+  --surface:     #1E293B;
+  --card:        #1E293B;
+  --text:        #F1F5F9;
+  --text-muted:  #94A3B8;
+  --accent:      #60A5FA;
+  --accent-dark: #3B82F6;
+  --accent-dim:  #1E3A5F;
+  --border:      #334155;
 }
 
 /* ============================================================
@@ -108,6 +121,36 @@ ul { list-style: none; }
 
 #nav ul a:hover {
   color: var(--hero-text);
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1.5px solid rgba(148, 163, 184, 0.28);
+  background: transparent;
+  color: var(--hero-muted);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.theme-toggle:hover {
+  color: var(--hero-text);
+  border-color: rgba(148, 163, 184, 0.55);
+}
+
+/* moon shown by default (light mode); sun shown in dark mode */
+.icon-sun { display: none; }
+[data-theme="dark"] .icon-sun { display: block; }
+[data-theme="dark"] .icon-moon { display: none; }
+
+/* slightly lighter nav bg in dark mode so it reads against the dark page */
+[data-theme="dark"] #nav.scrolled {
+  background: rgba(30, 41, 59, 0.95);
 }
 
 /* ============================================================
@@ -335,7 +378,7 @@ section:not(#hero) {
 }
 
 .project-card {
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-left: 3px solid var(--accent);
   border-radius: var(--radius);
