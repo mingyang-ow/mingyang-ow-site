@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mingyang Ow — Portfolio</title>
+  <meta name="description" content="Mingyang Ow — software engineer and machine learning practitioner based in Singapore." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%232563EB'/><text x='50' y='72' font-family='sans-serif' font-size='58' font-weight='700' fill='white' text-anchor='middle'>M</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav id="nav" aria-label="Site navigation">
+    <a href="#hero" class="nav-brand" aria-label="Home">MO</a>
+    <ul role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#repos">Repos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-ghost" aria-hidden="true">MO</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Software Engineer &amp; ML Practitioner</p>
+      <h1>Mingyang Ow</h1>
+      <p class="hero-tagline">I build things with data — predictive models, clean code, and software that does exactly what it says.</p>
+      <div class="hero-links">
+        <a href="mailto:2570465@sit.singaporetech.edu.sg" class="btn btn-primary">Get in touch</a>
+        <a href="https://github.com/mingyang-ow" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/mingyang-ow" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container reveal">
+      <h2 class="section-label">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a software engineering student at Singapore Institute of Technology with a focus on machine learning and data-driven applications. I'm drawn to problems where careful analysis turns raw data into decisions — whether that's predicting company insolvency from financial signals or building tools that make information more accessible.</p>
+          <p>Outside coursework I spend time writing Python, exploring datasets, and paying attention to what makes software feel well-made. I'm looking for roles where I can ship real things and keep learning from people who care about the craft.</p>
+        </div>
+        <aside class="about-meta" aria-label="Quick facts">
+          <div class="meta-item">
+            <span class="meta-label">Based in</span>
+            <span class="meta-value">Singapore</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Studying at</span>
+            <span class="meta-value">Singapore Institute of Technology</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Focus</span>
+            <span class="meta-value">ML &amp; Software Engineering</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Open to</span>
+            <span class="meta-value">Internships &amp; Full-time roles</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="tinted">
+    <div class="container reveal">
+      <h2 class="section-label">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="skill-list" role="list">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+            <li>HTML &amp; CSS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Machine Learning</h3>
+          <ul class="skill-list" role="list">
+            <li>scikit-learn</li>
+            <li>Pandas &amp; NumPy</li>
+            <li>Jupyter Notebooks</li>
+            <li>Data Visualisation</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools &amp; Practices</h3>
+          <ul class="skill-list" role="list">
+            <li>Git &amp; GitHub</li>
+            <li>Linux / CLI</li>
+            <li>REST APIs</li>
+            <li>Agile workflows</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container reveal">
+      <h2 class="section-label">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Company Insolvency Predictor</h3>
+            <span class="project-tag">Python · ML</span>
+          </div>
+          <p>Trained and evaluated multiple classifiers on financial-statement data to predict corporate insolvency. Tuned for recall — because in a high-stakes classification the cost of a missed failure outweighs a false alarm.</p>
+          <a href="https://github.com/mingyang-ow/Company-insolvency-analysis-and-prediction-using-Machine-Learning" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+        </article>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Bidding Game</h3>
+            <span class="project-tag">Python</span>
+          </div>
+          <p>A command-line strategy game built around competitive bidding mechanics. Implements turn logic, budget constraints, and win conditions with a clean separation between game state and I/O.</p>
+          <a href="https://github.com/mingyang-ow/Bidding-Game" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+        </article>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Python Calculator</h3>
+            <span class="project-tag">Python</span>
+          </div>
+          <p>A calculator with careful input parsing, operator precedence, and graceful error recovery — built to understand what it actually takes to make a small tool feel reliable.</p>
+          <a href="https://github.com/mingyang-ow/Calculator" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="repos" class="tinted">
+    <div class="container">
+      <h2 class="section-label reveal">GitHub</h2>
+      <div id="repos-grid" class="repos-grid" aria-live="polite" aria-label="Public repositories">
+        <p class="repos-status">Loading repositories…</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact-wrap reveal">
+      <h2 class="section-label centered">Let's talk</h2>
+      <p class="contact-sub">Open to internships, graduate roles, and conversations about interesting problems.</p>
+      <div class="contact-links">
+        <a href="mailto:2570465@sit.singaporetech.edu.sg" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          2570465@sit.singaporetech.edu.sg
+        </a>
+        <a href="https://github.com/mingyang-ow" class="contact-link" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          github.com/mingyang-ow
+        </a>
+        <a href="https://linkedin.com/in/mingyang-ow" class="contact-link" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          linkedin.com/in/mingyang-ow
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Mingyang Ow &middot; <a href="https://github.com/mingyang-ow/mingyang-ow-site" target="_blank" rel="noopener noreferrer">View source</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
